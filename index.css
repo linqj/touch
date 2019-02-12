@@ -1,0 +1,48 @@
+/* 样式初始化 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+aside {
+    height: 100%;
+    width: 100%;
+}
+
+.draw {
+    width: 60px;
+    height: 500px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY (- 50%);
+}
+
+ul:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+ul {
+    zoom: 1;
+}
+
+li {
+    list-style: none;
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
